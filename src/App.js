@@ -1,11 +1,12 @@
 import Header from './Components/Header';
-import Navbar from './Components/Navbar';
+import FirstView from './Components/FirstView';
+import SecondView from './Components/SecondView';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Navbar/>
+      <FirstView/>
+      <SecondView/>
     </div>
   );
 }
