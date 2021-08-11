@@ -1,0 +1,120 @@
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    background-color:#7a7a79;
+    height:1.5vw;
+    font-size: 1vw;
+    display:inline-block;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    background-color:rgb(0, 0, 0, 0.05) !important;
+}
+.nav-item{
+    margin-left:25px !important;
+}
+.nav-link{
+    color:white;
+    text-shadow: 1px 1px black;
+}
+.nav-login{
+    background-color: #7a7a79;
+}
+.nav-register{
+    background-color: #eb5600;
+}
+.nav-overlap{
+    background-image: url("./img/nav-overlap.jpg");
+
+    height:100vh;
+    width:100vw;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.first-view{
+    margin-top:40vh;
+}
+.fv-reg{
+    display:flex;
+    justify-content: center;
+    font-size:3em;
+    margin-bottom:0px !important;
+    padding-bottom:0px !important;
+
+    border-radius:25px;
+
+    background-color: rgba(0, 251, 255, 0.8);
+    box-shadow: 0px 0px 100px 0.2px rgb(0,249,255, 0.6);
+}
+.fv-log{
+    display:flex;
+    justify-content: center;
+    margin-left:60px;
+    font-size:3em;
+    margin-bottom:0px !important;
+    padding-bottom:0px !important;
+
+    border-radius:25px;
+
+    background-color: rgb(235,86,0, 0.8);
+    box-shadow: 0px 0px 100px 0.2px rgb(235,86,0, 0.6);
+}
+.fv-reg-txt{
+
+}
+.fv-log-txt{
+
+}
+.scroll-encourage-txt{
+    font-size: 25px;
+    color:white;
+    text-shadow: 2px 3px black;
+}
+
+/* Second View */
+
+.sv-bg{
+    height:100vh;
+    width: 100vw;
+    margin: 0px;
+    background-color: rgb(27, 27, 27);
+}
+.sv-row{
+    padding-top:300px;
+}
+.sv-img{
+    width:99%;
+    height:99%;
+
+    background-image: url('./img/sv-img.jpg');
+    background-size: cover;
+
+    margin-right:30px !important;
+}
+.demo-list{
+    font-size:30px !important;
+}
+ol.demo-list > li{
+    color:antiquewhite;
+}
+
+/*User Register Page*/
+.logoRowReg{
+    padding-top:50px;
+}
+.RegisterContainer{
+    position:absolute;
+    background-color:#7a7a79;
+
+    top:5%;
+    left:15%;
+
+}
