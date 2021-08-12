@@ -21,17 +21,27 @@ class UserRegisterForm extends React.Component{
     }
     handleSubmit(event){
         event.preventDefault();
+
+        let fetchBody = JSON.stringify({
+            'age':`${this.state.age}`,
+            'email':`${this.state.email}`,
+            'firstName':`${this.state.firstName}`,
+            'lastName':`${this.state.lastName}`,
+            'password':`${this.state.password}`,
+            'username':`${this.state.username}`
+        });
         fetch('http://localhost:3001/user/register',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
             },
-            body:this.state
+            body:fetchBody
         })
+        .then(data => data.json())
         .then(data =>{
+            
             if(data.success) console.log('Brava coae');
             else console.log(data.info + data.success);
-            console.log(this.state);
         });
         
     }
